@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Week8_lab</title>
+</head>
+<body>
+<p>
+	Please fill out this form to help us improve our site.
+</p>
+<form>
+	<p>
+		<label>Name:
+			<input name = "name" size="25" maxlength="25">
+		</label>
+	</p>
+	<p>
+		Comments:<br>
+		<textarea rows="8" cols="40" placeholder="Enter comments here."></textarea></p>
+	<p>
+		<label>E-mail Address:
+			<input email="email" size="25" maxlength="25">
+		</label>
+	</p>
+	<p>
+		<strong>Things you liked:</strong><br>
+			Site design<input type="checkbox" name="design" value="site design">
+			Links<input type="checkbox" name="design" value="links">
+			Ease of use<input type="checkbox" name="design" value="ease of use">
+			Images<input type="checkbox" name="design" value="images">
+			Source code<input type="checkbox" name="design" value="source code">
+	</p>
+	<p>
+		<strong>How did you get our site?:</strong><br>
+			Search engine<input type="radio" name="how" value="search engine" checked>
+			Links from another site<input type="radio" name="how" value="links from another site">
+			Deitel.com Web site<input type="radio" name="how" value="deitel">
+			Reference in a book<input type="radio" name="how" value="book">
+			Other<input type="radio" name="how" value="other">
+	</p>
+	<p>
+		Rate our site:
+			<select name ="rate">
+				<option value ="amazing">Amazing</option>
+				<option value="normal">Normal</option>
+				<option value="bad">Bad</option>
+			</select>
+	</p>
+	<p>
+		<input type="submit" value="Submit">
+		<input type="reset" value ="Clear">
+	</p>
+</form>
+</body>
+</html>
