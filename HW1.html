@@ -4,6 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
+	<style type="text/css">
+		.op {font-family: monospace; background-color: lightblue;}
+		td em {font-family: cursive;}
+		tr {font-family: fantasy;}
+	</style>
 </head>
 <form>
 <body>
@@ -14,7 +19,7 @@
 	<tr>
 		<td rowspan="3"><img src="./pic/policesu.jpg" width="100" height="100" alt="policeSu" ><br>
 			personal photo</td>
-		<td colspan="2" align="left">Name:
+		<td colspan="2" align="left" class="op">Name:
 			<label>
 				<input type="text" name="name">
 			</label><br>
@@ -25,7 +30,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td>
+		<td><em>
 			<label>County:
 			<select name="county">
 				<option value="Taipei">Taipei</option>
@@ -33,12 +38,12 @@
 				<option value="Taichung">Taichung</option>
 				<option value="Taoyuan">Taoyuan</option>
 			</select></label>
-		</td>
-		<td>
+		</em></td>
+		<em><td>
 			<label>Birthday:
 				<input type="date" name="date">
 			</label>
-		</td>
+		</td></em>
 	</tr>
 	<tr>
 		<td colspan="2" align="left">
