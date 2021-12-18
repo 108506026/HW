@@ -1,0 +1,31 @@
+button:hover{
+	color: red;
+}
+button{
+	width: 50%;
+	background-color: darkorange;
+	color: white;
+}
+.hidden {
+	border-style: hidden; 
+	border-radius: 2px; 
+	background-color: lightgray;
+	width: 30%;
+	margin: auto;
+}
+input {
+	border-style: solid;
+	width: 90%;
+}
+input:hover{
+	border-style: groove;
+}
+.f1{
+	font-family: "Times New Roman", Times, serif;
+}
+.f2{
+	font-family: Arial, Helvetica, sans-serif
+}
+.f3{
+	font-family: "Lucida Console", "Courier New", monospace;
+}
