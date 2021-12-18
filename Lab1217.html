@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JS Calculator</title>
+<script type="text/javascript">
+var result_1;
+//加法
+function add() {
+var a = getFirstNumber();
+var b = getTwiceNumber();
+var re = Number(a) + Number(b);
+sendResult(re);
+}
+//減法
+function subtract() {
+var a = getFirstNumber();
+var b = getTwiceNumber();
+var re = a - b;
+sendResult(re);
+}
+//乘法
+function ride() {
+var a = getFirstNumber();
+var b = getTwiceNumber();
+var re = a * b;
+sendResult(re);
+}
+//除法
+function devide() {
+var a = getFirstNumber();
+var b = getTwiceNumber();
+var re = a / b;
+sendResult(re);
+}
+//給p標簽傳值
+function sendResult(result_1) {
+var num = document.getElementById("result");
+var s="Result = ";
+num.innerHTML = s+result_1;
+
+}
+//獲取第一位數字
+function getFirstNumber() {
+var firstNumber = document.getElementById("first").value;
+return firstNumber;
+}
+//獲取第二位數字
+function getTwiceNumber() {
+var twiceNumber = document.getElementById("twice").value;
+return twiceNumber;
+}
+function cal(){
+	var op = document.getElementById("way").value;
+	if (op=="+") {add();}
+	else if (op=="-") {subtract();}
+	else if (op=="*") {ride();}
+	else if (op=="/") {devide();}
+}
+</script>
+</head>
+<body>
+<p>JS Calculator</p>
+<p>Number 1</p>
+
+<p><input type="text" id="first" /></p>
+
+<p>Number 2</p>
+<p><input type="text" id="twice" /></p>
+
+<p>Operate way?</p>
+<p><input type="text" id="way"></p>
+<p><button onclick="cal()">Add</button></p>
+
+
+<p id="result"></p>
+
+
+</body>
+</html>
